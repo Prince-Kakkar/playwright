@@ -1,8 +1,8 @@
 import { test } from "@playwright/test";
-import { HomePage } from "../../pages/HomePage";
-import { SearchResultsPage } from "../../pages/SearchResultPage"; 
-import { ProductPage } from "../../pages/ProductPage";
-import { CartPage } from "../../pages/CartPage";
+import { HomePage} from "../pages/HomePage" ;
+import { SearchResultsPage } from "../pages/SearchResultPage"; 
+import { ProductPage } from "../pages/ProductPage";
+import { CartPage } from "../pages/CartPage";
 
 test("Buy iPhone and add to cart on Amazon", async ({ page }) => {
   const homePage = new HomePage(page);
