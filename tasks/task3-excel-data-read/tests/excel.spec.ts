@@ -9,7 +9,9 @@ test("Excel data driven test", async () => {
   }
   for (const row of excelData) {
     console.log("Row Data:", row);
-    expect(row.username).not.toBeNull();
-    expect(row.password).not.toBeNull();
+    expect(row.Name).not.toBeNull();
+    expect(row.Age).toBeGreaterThan(0);
+    expect(row.City).not.toBeNull();
+    expect(row.Email).toMatch(/.+@.+\..+/);
   }
 });
